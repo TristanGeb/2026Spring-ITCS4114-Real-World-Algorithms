@@ -25,21 +25,27 @@ public class Lab2ATask2 {
     static double[] bubbleSwapArr = new double[run_amount];
     static double[] insertionSizeArr = new double[run_amount];
     static double[] bubbleSizeArr = new double[run_amount];
+    static double[] bubbleCompareArr = new double[run_amount];
+    static double[] insertionCompareArr = new double[run_amount];
+
     //TODO: Implement insertion sort
     static Consumer<int[]> insertion_sort = arr -> {
         insertionSizeArr[count]=arr.length;
         System.out.println("insertion#" + (count+1) + "(len=" + arr.length + ")");
-        int swapCount=0;
+        double swapCount=0;
+        double compareCount=0;
         int temp;
         int shiftAmount;
         int lastShiftedKey;
         for (int key=1 ; key<arr.length ; key++){
+            compareCount++;
             if(arr[key]>=arr[key-1]){
                 continue;
             }
             shiftAmount=0;
             temp=arr[key];
             for (int x=key-1 ;  x>=0;x--){
+                compareCount++;
                 if(arr[key]>=arr[x]){
                     break;
                 }
@@ -53,6 +59,7 @@ public class Lab2ATask2 {
             swapCount++;
             arr[lastShiftedKey]=temp;
         }
+        insertionCompareArr[count]=compareCount;
         insertionSwapArr[count]=swapCount;
         count++;
     };
@@ -62,11 +69,13 @@ public class Lab2ATask2 {
         int temp;
         bubbleSizeArr[count]=arr.length;
         System.out.println("bubble#" + (count+1) + "(len=" + arr.length + ")");
-        int swapCount=0;
+        double swapCount=0;
+        double compareCount=0;
         boolean swapThisRun;
         for(int endElement=arr.length-1;endElement >0;endElement--){
            swapThisRun = false;
             for(int keyElement=0;keyElement <endElement ; keyElement++){
+                compareCount++;
                 if(arr[keyElement] > arr[keyElement+1] ){
                     swapThisRun = true;
                     temp = arr[keyElement];
@@ -79,7 +88,7 @@ public class Lab2ATask2 {
                 break;
             }
         }
-        
+        bubbleCompareArr[count]=compareCount;
         bubbleSwapArr[count]=swapCount;
         count++;
     };
@@ -107,8 +116,14 @@ bm.linearRange(10000, 200000, run_amount-1);
         bm.run("Insertion sort",insertion_sort);
         count=0;
         bm.run("Bubble sort",bubble_sort);
-        plot2.setDataSeries("Insertion Swaps",insertionSizeArr,insertionSwapArr);
-        plot2.setDataSeries("Bubble Swaps",bubbleSizeArr,bubbleSwapArr);
+        double[] insertionOperationsArr=new double[run_amount];
+        double[] bubbleOperationsArr=new double[run_amount];
+        for(int x=0; x<run_amount;x++){
+            insertionOperationsArr[x]=insertionSwapArr[x] + insertionCompareArr[x];
+            bubbleOperationsArr[x]=bubbleSwapArr[x] + bubbleCompareArr[x];
+        }
+        plot2.setDataSeries("Insertion Swaps & Compares",insertionSizeArr,insertionOperationsArr);
+        plot2.setDataSeries("Bubble Swaps & Compares",bubbleSizeArr,bubbleOperationsArr);
         plot2.setTitle("Swaps Done per Array Size");
         plot2.setXLabel("Array Size");
         plot2.setYLabel("Swaps Done");
