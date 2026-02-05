@@ -18,7 +18,7 @@ import java.util.function.Consumer;
  *
  * @author Trist
  */
-public class Lab2ATask2 {
+public class Lab2ATask2And3 {
     static final int run_amount=21;
     static int count=0;
     static double[] insertionSwapArr = new double[run_amount];
