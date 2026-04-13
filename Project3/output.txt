@@ -1,0 +1,262 @@
+
+
+tree1
+	writeing to File id=13
+	rotated tree
+	rotating Binary tree
+		checking node =5
+		Left Rotation
+	done rotating Binary Tree
+	writeing to File id=14
+
+
+tree2
+	writeing to File id=15
+	rotated tree
+	rotating Binary tree
+		checking node =13
+		Right Rotation
+	done rotating Binary Tree
+	writeing to File id=16
+
+
+tree3
+	writeing to File id=17
+	rotated tree
+	rotating Binary tree
+		checking node =5
+		Right Left Rotation
+	done rotating Binary Tree
+	writeing to File id=18
+
+
+tree4
+	writeing to File id=19
+	rotated tree
+	rotating Binary tree
+		checking node =13
+		left Right Rotation
+	done rotating Binary Tree
+	writeing to File id=20
+
+
+tree5
+		now checking tree for imbalance
+		checking node =41
+		now checking tree for imbalance
+		checking node =41
+		now checking tree for imbalance
+		checking node =34
+		checking node =41
+		now checking tree for imbalance
+		checking node =67
+		checking node =41
+		now checking tree for imbalance
+		checking node =0
+		checking node =34
+		left Right Rotation
+		checking node =41
+		now checking tree for imbalance
+		checking node =69
+		checking node =67
+		Left Rotation
+		checking node =41
+		now checking tree for imbalance
+		checking node =67
+		checking node =69
+		checking node =41
+		now checking tree for imbalance
+		checking node =58
+		checking node =67
+		left Right Rotation
+		checking node =69
+		checking node =41
+		now checking tree for imbalance
+		checking node =67
+		checking node =62
+		checking node =69
+		left Right Rotation
+		checking node =41
+		now checking tree for imbalance
+		checking node =0
+		checking node =24
+		checking node =41
+		now checking tree for imbalance
+		checking node =58
+		checking node =62
+		checking node =67
+		checking node =41
+		now checking tree for imbalance
+		checking node =78
+		checking node =69
+		Left Rotation
+		checking node =67
+		checking node =41
+		now checking tree for imbalance
+		checking node =34
+		checking node =24
+		checking node =41
+		now checking tree for imbalance
+		checking node =58
+		checking node =62
+		checking node =67
+		checking node =41
+		now checking tree for imbalance
+		checking node =81
+		checking node =78
+		checking node =67
+		checking node =41
+		now checking tree for imbalance
+		checking node =91
+		checking node =81
+		Left Rotation
+		checking node =78
+		checking node =67
+		checking node =41
+		now checking tree for imbalance
+		checking node =45
+		checking node =58
+		checking node =62
+		Right Rotation
+		checking node =67
+		checking node =41
+		now checking tree for imbalance
+		checking node =34
+		checking node =24
+		checking node =41
+		now checking tree for imbalance
+		checking node =5
+		checking node =0
+		Right Left Rotation
+		checking node =24
+		checking node =41
+		now checking tree for imbalance
+		checking node =0
+		checking node =4
+		checking node =24
+		checking node =41
+		now checking tree for imbalance
+		checking node =45
+		checking node =58
+		checking node =67
+		checking node =41
+		now checking tree for imbalance
+		checking node =95
+		checking node =91
+		checking node =78
+		Left Rotation
+		checking node =67
+		checking node =41
+		now checking tree for imbalance
+		checking node =81
+		checking node =78
+		checking node =91
+		checking node =67
+		checking node =41
+		now checking tree for imbalance
+		checking node =5
+		checking node =4
+		checking node =24
+		checking node =41
+		now checking tree for imbalance
+		checking node =21
+		checking node =5
+		Right Left Rotation
+		checking node =4
+		checking node =24
+		checking node =41
+		now checking tree for imbalance
+		checking node =21
+		checking node =16
+		checking node =4
+		checking node =24
+		left Right Rotation
+		checking node =41
+		now checking tree for imbalance
+		checking node =53
+		checking node =45
+		checking node =58
+		checking node =67
+		checking node =41
+		now checking tree for imbalance
+		checking node =27
+		checking node =34
+		checking node =24
+		checking node =16
+		checking node =41
+		now checking tree for imbalance
+		checking node =69
+		checking node =78
+		checking node =91
+		checking node =67
+		checking node =41
+		now checking tree for imbalance
+		checking node =36
+		checking node =34
+		checking node =24
+		checking node =16
+		checking node =41
+		now checking tree for imbalance
+		checking node =5
+		checking node =4
+		checking node =16
+		checking node =41
+		now checking tree for imbalance
+		checking node =95
+		checking node =91
+		checking node =67
+		checking node =41
+		now checking tree for imbalance
+		checking node =36
+		checking node =34
+		checking node =24
+		checking node =16
+		checking node =41
+		now checking tree for imbalance
+		checking node =92
+		checking node =95
+		checking node =91
+		checking node =67
+		checking node =41
+		now checking tree for imbalance
+		checking node =2
+		checking node =0
+		Left Rotation
+		checking node =4
+		checking node =16
+		checking node =41
+		now checking tree for imbalance
+		checking node =12
+		checking node =5
+		Right Left Rotation
+		checking node =4
+		checking node =16
+		checking node =41
+		now checking tree for imbalance
+		checking node =21
+		checking node =24
+		checking node =16
+		checking node =41
+		now checking tree for imbalance
+		checking node =27
+		checking node =34
+		checking node =24
+		checking node =16
+		checking node =41
+		now checking tree for imbalance
+		checking node =71
+		checking node =69
+		Left Rotation
+		checking node =78
+		checking node =91
+		checking node =67
+		checking node =41
+		now checking tree for imbalance
+		checking node =69
+		checking node =71
+		checking node =78
+		checking node =91
+		checking node =67
+		checking node =41
+	writeing to File id=21
+DONE FINAL
